@@ -1,5 +1,5 @@
 const int VAL_PROBE = 0; //Analog pin 0
-const int MOISTURE_LEVEL = 250; // the value after the LED goes on
+const int MOISTURE_LEVEL = 250; // the value after the Relay goes on
 
 void setup()
 {
@@ -8,7 +8,7 @@ void setup()
   pinMode(7, OUTPUT);
 }
 
-void LedState(int state)
+void RelayState(int state)
 {
   digitalWrite(13,state);
 }
@@ -27,7 +27,7 @@ void loop()
   }
   else 
   {
-    LedState(LOW);
+    RelayState(LOW);
     digitalWrite(7,LOW);
   }
   
