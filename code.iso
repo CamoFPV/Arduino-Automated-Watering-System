@@ -20,7 +20,7 @@ void loop()
   Serial.print("Moisture = ");
   Serial.println(moisture);
   
-  if(moisture > MOISTURE_LEVEL)
+  if(moisture =< MOISTURE_LEVEL)
   {
     RelayState(HIGH);
     digitalWrite(7,HIGH);
