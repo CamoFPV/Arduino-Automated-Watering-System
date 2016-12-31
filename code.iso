@@ -22,7 +22,7 @@ void loop()
   
   if(moisture > MOISTURE_LEVEL)
   {
-    LedState(HIGH);
+    RelayState(HIGH);
     digitalWrite(7,HIGH);
   }
   else 
